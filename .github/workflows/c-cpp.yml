@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: sudo apt-get install checkinstall -y
-    - run: checkinstall
+    - run: checkinstall make make-pc-file
     - name: make
       run: make
     - name: make test

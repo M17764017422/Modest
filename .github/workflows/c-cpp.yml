@@ -15,6 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - run: sudo apt-get install checkinstall -y
     - run: sudo checkinstall make make-pc-file
+    - uses: ac
     - name: 上传
       with:
           name: Modest deb

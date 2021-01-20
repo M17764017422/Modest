@@ -16,7 +16,7 @@ jobs:
     - run: sudo apt-get install checkinstall -y
     - run: sudo checkinstall make make-pc-file
     - name: 上传
-        with:
+      with:
           name: Modest deb
           path: ${{ github.workspace }}/Modest/Modest/modest_20210120-1_amd64.deb
     - name: make

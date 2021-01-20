@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: sudo apt-get install
+    - run: sudo apt-get install checkinstall -y
     - run: checkinstall
     - name: make
       run: make

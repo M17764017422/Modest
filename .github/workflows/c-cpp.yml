@@ -15,6 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - run: sudo apt-get install checkinstall -y
     - run: sudo checkinstall make make-pc-file
+        with:
+          name: legado apk
+          path: ${{ github.workspace }}/
     - name: make
       run: make
     - name: make test
